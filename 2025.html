@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success with Study</title>
+    <link rel="icon" type="image/png" href="Untitled design(7).png">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; display: flex; }
+        header { background: #2C3E50; color: white; padding: 20px; font-size: 28px; font-weight: bold; text-align: center; }
+        .sidebar { width: 250px; background: #34495E; color: white; padding: 20px; height: 100vh; position: fixed; }
+        .sidebar img { width: 80px; border-radius: 50%; display: block; margin-bottom: 15px; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar ul li { padding: 15px; margin: 10px 0; background: #2C3E50; border-radius: 5px; cursor: pointer; text-align: center; }
+        .sidebar ul li:hover { background: #1ABC9C; }
+        .container { margin-left: 270px; padding: 20px; background: white; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); border-radius: 10px; flex-grow: 1; text-align: center; }
+        .ebook { border: 1px solid #ddd; padding: 15px; margin: 20px; border-radius: 5px; background: #fff; text-align: left; display: flex; align-items: center; }
+        .ebook img { width: 100px; margin-right: 15px; border-radius: 5px; }
+        .ebook h4 { margin: 0; color: #2C3E50; }
+        .ebook a, .coming-soon { text-decoration: none; color: #fff; background: #3498DB; padding: 8px 12px; border-radius: 5px; display: inline-block; margin-top: 10px; }
+        .coming-soon { background: #95A5A6; cursor: default; }
+        .subscribe { margin-top: 30px; background: #ECF0F1; padding: 20px; border-radius: 10px; }
+        input, button { padding: 10px; margin: 5px; border: none; border-radius: 5px; }
+        button { background: #E74C3C; color: white; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <img src="Untitled design(7).png" alt="Site Icon">
+        <h3>Success with Study</h3>
+        <ul>
+            <li onclick="location.href='#ebooks'">📚 eBooks</li>
+            <li onclick="location.href='#blogs'">📝 Blog Posts</li>
+            <li onclick="location.href='#subscribe'">📩 Subscribe</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Welcome to Your Study Resource Hub!</h2>
+        <p>Find expert study techniques, resources, and eBooks to boost your learning.</p>
+        
+        <h3 id="ebooks">📚 Featured eBooks</h3>
+
+        <div class="ebook">
+            <img src="THUMBNAIL_IMAGE_URL" alt="Free Study Planner">
+            <div>
+                <h4>Free Study Planner</h4>
+                <p>A well-structured planner to help you organize your study schedule effectively.</p>
+                <a href="https://successwithstudy.gumroad.com/l/uumug" target="_blank">Download Free</a>
+            </div>
+        </div>
+
+        <div class="ebook">
+            <img src="THUMBNAIL_IMAGE_URL" alt="How to Implement the 80-20 Rule">
+            <div>
+                <h4>How to Implement the 80-20 Rule in Studies More Efficiently</h4>
+                <p>Learn how to focus on the 20% of study techniques that yield 80% of the results.</p>
+                <a href="https://successwithstudy.gumroad.com/l/ghgvm" target="_blank">Buy on Gumroad</a>
+            </div>
+        </div>
+
+        <div class="ebook">
+            <img src="THUMBNAIL_IMAGE_URL" alt="Smart Study Techniques">
+            <div>
+                <h4>Smart Study Techniques</h4>
+                <p>Learn scientifically proven techniques to study smarter, not harder.</p>
+                <span class="coming-soon">Coming Soon</span>
+            </div>
+        </div>
+
+        <div class="ebook">
+            <img src="THUMBNAIL_IMAGE_URL" alt="Time Management for Students">
+            <div>
+                <h4>Time Management for Students</h4>
+                <p>Manage your study schedule efficiently and improve productivity.</p>
+                <span class="coming-soon">Coming Soon</span>
+            </div>
+        </div>
+
+        <h3 id="blogs">📝 Latest Blog Posts</h3>
+        <ul>
+            <li><a href="https://successwithstudyblogs.blogspot.com/2025/03/time-management-for-students.html" target="_blank">📖 Time Management for Students</a></li>
+        </ul>
+
+        <div id="subscribe" class="subscribe">
+            <h3>📩 Subscribe for Updates</h3>
+            <p>Stay updated with new blog posts and free resources!</p>
+            <input type="email" placeholder="Enter your email" required>
+            <button>Subscribe</button>
+        </div>
+    </div>
+</body>
+</html>
